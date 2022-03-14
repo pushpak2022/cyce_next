@@ -1,0 +1,160 @@
+@import "../assets/scss/variables";
+
+.btn-primary {
+  color: #fff !important;
+  background-color: #000624 !important;
+  border-color: #000624 !important;
+}
+.text-primary {
+  color: #fff;
+  background-color: #000624;
+  border-color: #000624;
+}
+
+.prBreadcrumbArea {
+  display: flex;
+  align-items: center;
+
+  height: 160px;
+  padding-top: 100px;
+  .breadcrumbTitle {
+    font-size: 50px;
+    line-height: 70px;
+
+    margin: 0;
+
+    color: #fefefe;
+  }
+}
+
+@media #{$xs-layout} {
+  .prBreadcrumbArea {
+    height: 400px;
+    padding-top: 87px;
+  }
+  .prBreadcrumbArea .breadcrumbTitle {
+    font-size: 50px;
+  }
+  .prBreadcrumbArea .breadcrumbTitle {
+    font-size: 30px;
+  }
+  .breadcrumb--2.prBreadcrumbArea .breadcrumbTitle {
+    font-size: 28px;
+    line-height: 45px;
+  }
+}
+
+@media #{$xxs-layout} {
+  .prBreadcrumbArea {
+    height: 300px;
+    padding-top: 82px;
+  }
+}
+
+.sectionTitle2 {
+  text-align: center;
+  span {
+    font-size: 18px;
+
+    color: #010f54;
+  }
+  h2 {
+    font-size: 36px;
+
+    position: relative;
+
+    margin-top: 4px;
+    margin-bottom: 35px;
+    padding-bottom: 40px;
+
+    color: #010f54;
+    &::before {
+      position: absolute;
+      bottom: 0;
+
+      width: 500px;
+      height: 3px;
+
+      content: "";
+
+      background: linear-gradient(to left, #fccec8, #e05941);
+    }
+  }
+}
+
+@media #{$xlg-layout} {
+  .sectionTitle2 h2 {
+    margin-bottom: 22px;
+    padding-bottom: 21px;
+  }
+}
+
+@media #{$sm-layout} {
+  .sectionTitle2 h2 {
+    font-size: 27px;
+
+    margin-bottom: 24px;
+    padding-bottom: 21px;
+  }
+}
+
+@media #{$xs-layout} {
+  .sectionTitle2 h2 {
+    font-size: 22px;
+
+    margin-bottom: 24px;
+  }
+}
+
+.padding115 {
+  padding: 50px 0;
+}
+
+.worksInner p {
+  font-size: 16px;
+  line-height: 27px;
+
+  margin: 0;
+
+  color: #000;
+  text-align: center;
+}
+
+.works {
+  display: flex;
+  .icons {
+    margin-right: 17px;
+    svg {
+      font-size: 16px;
+
+      color: #00082e;
+    }
+  }
+  .content {
+    h2 {
+      font-size: 24px;
+      line-height: 27px;
+
+      margin-bottom: 20px;
+
+      color: #00082e;
+    }
+    p {
+      font-size: 16px;
+      line-height: 27px;
+
+      margin: 0;
+
+      color: #000;
+    }
+  }
+  & + .works {
+    margin-top: 40px;
+  }
+}
+
+@media #{$sm-layout} {
+  .voopoWorks {
+    padding: 60px 0;
+  }
+}

@@ -1,0 +1,12 @@
+@import "../../assets/scss/variables";
+
+.logo {
+  font-size: 2.5em;
+  color: white;
+  :visited {
+    color: white;
+  }
+}
+.imgFluid {
+  max-height: 60px;
+}

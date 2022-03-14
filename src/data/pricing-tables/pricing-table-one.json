@@ -1,0 +1,22 @@
+[
+  {
+    "id": "1",
+    "planName": "Early Adopter",
+    "planPriceCurrency": "$",
+    "planPrice": "0.97",
+    "planPriceDuration": "/registration",
+    "planFeatures": "<ul><li>Customized Registration Flow</li><li>Unlimited Locations</li><li>Unlimited Users</li><li>Unlimited Programs/Sessions/Types</li><li>0% Transaction Fee</li><li>Integrate On Your Site</li><li>Integrate With Your Payment Processor</li><li>Integrate With Your CRM</li><li>You Own Your Data</li><li>100% Risk-Free</li></ul>",
+    "orderUrl": "/start",
+    "featured": true
+  },
+  {
+    "id": "2",
+    "planName": "pod Inner-Circle",
+    "planPriceCurrency": "$",
+    "planPrice": "997",
+    "planPriceDuration": "/month",
+    "planFeatures": "<ul><li>100% Done For You</li><li>Technical Consultation Hours</li><li>We build/code Features For You</li><li>Customized Registration Flow</li><li>Unlimited Locations</li><li>Unlimited Users</li><li>Unlimited Programs/Sessions/Types</li><li>0% Transaction Fee</li><li>Integrate On Your Site</li><li>Integrate With Your Payment Processor</li><li>Integrate With Your CRM</li><li>You Own Your Data</li><li>100% Risk-Free</li></ul>",
+    "orderUrl": "/contact",
+    "featured": false
+  }
+]

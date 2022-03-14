@@ -1,0 +1,32 @@
+@import "../../assets/scss/variables";
+
+.psContainer {
+  position: relative;
+  z-index: 2;
+
+  padding: 120px;
+}
+
+@media #{$xlg-layout} {
+  .psContainer {
+    padding-bottom: 250px;
+  }
+}
+
+@media #{$lg-layout} {
+  .psContainer {
+    padding-bottom: 150px;
+  }
+}
+
+@media #{$md-layout} {
+  .psContainer {
+    padding-bottom: 150px;
+  }
+}
+
+@media #{$sm-layout} {
+  .psContainer {
+    padding-bottom: 150px;
+  }
+}

@@ -1,0 +1,26 @@
+.swiper-button-next {
+  color: #ff9494;
+  opacity: 50%;
+}
+
+.swiper-button-next:hover {
+  opacity: 70%;
+}
+
+.swiper-button-prev {
+  color: #ff9494;
+  opacity: 50%;
+}
+
+.swiper-button-prev:hover {
+  opacity: 70%;
+}
+
+.swiper-pagination-bullet-active {
+  background-color: #c94d44 !important;
+  opacity: 70%;
+}
+
+.swiper-container {
+  width: 100%;
+}

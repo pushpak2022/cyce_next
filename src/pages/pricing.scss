@@ -1,0 +1,18 @@
+$white: #fff;
+$color-primary: #337ab7;
+
+.nav-custom-pills {
+  .nav-link {
+    padding: 10px 20px;
+    font-size: 18px;
+    font-weight: 500;
+    color: $color-primary;
+    border-radius: 5px;
+  }
+
+  .nav-link.active,
+  .nav-item.show .nav-link {
+    color: $white;
+    background-color: $color-primary;
+  }
+}

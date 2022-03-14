@@ -1,0 +1,30 @@
+[
+  {
+    "id": "1",
+    "title": "All On YOUR Website",
+    "text": "Let us build powerful widgets and have them run on your site, and own it!",
+    "bg": "bg.png",
+    "icon": "flow.svg"
+  },
+  {
+    "id": "2",
+    "title": "Smart Submission Manager",
+    "text": "Manage all the data flowing in and out of your pipeline so you won't miss a beat!",
+    "bg": "bg.png",
+    "icon": "smart.svg"
+  },
+  {
+    "id": "3",
+    "title": "Notifications + Communications",
+    "text": "Send notification emails, automate data into your CRM, set up a custom sequence, you name it. Be able to do it all without having to pay any extra!",
+    "bg": "bg.png",
+    "icon": "inte.svg"
+  },
+  {
+    "id": "4",
+    "title": "Advance Reporting",
+    "text": "Get insights to your business. Know your numbers.",
+    "bg": "bg.png",
+    "icon": "reporting.svg"
+  }
+]

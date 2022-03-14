@@ -1,0 +1,20 @@
+[
+  {
+    "id": "1",
+    "title": "Registrations",
+    "text": "Is your registration on pen and paper? Having people manually enter forms into different systems? Say goodbye to killing trees and let our powerful software do the job.",
+    "icon": "customize.svg"
+  },
+  {
+    "id": "2",
+    "title": "Scheduling",
+    "text": "Tried a bunch of schedulers out there? Nothing seems to fit exactly the way your business runs? Let us customize a solution for you so you don't have to adjust your business.",
+    "icon": "inte.svg"
+  },
+  {
+    "id": "3",
+    "title": "Payments",
+    "text": "Want to take payment and other platforms charging you addtional % on top of payment processors? As long as you use our tools, we take 0% of your transactions.",
+    "icon": "auto.svg"
+  }
+]
