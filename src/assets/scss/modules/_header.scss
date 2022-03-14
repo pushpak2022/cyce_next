@@ -1,0 +1,96 @@
+.HeaderBar--root {
+  height: 110px;
+  background-color: $white;
+  backdrop-filter: blur(10px);
+
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-self: center;
+  padding-right: 122px;
+  padding-left: 122px;
+  width: 100%;
+
+  .logobox {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    cursor: pointer;
+    text-decoration: none;
+
+    .logo_img {
+      width: 33.33px;
+      height: 36.84px;
+      margin-right: 8.75px;
+    }
+
+    .logo_text {
+      font-style: normal;
+      font-weight: 500;
+      font-size: 24px;
+      line-height: 29px;
+      display: inline-block;
+      color: $text_dark_one;
+    }
+  }
+
+  .navs {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 0;
+    padding-left: 0;
+
+    li {
+      margin-right: 42px;
+      display: inline-block;
+
+      .nav_icon {
+        font-size: 20px;
+        margin-bottom: -2px;
+        margin-right: 8px;
+      }
+
+      a {
+        text-decoration: none;
+        color: $text_gray;
+        font-style: normal;
+        font-weight: 800;
+        font-size: 16px;
+        line-height: 20px;
+
+        &.active {
+          color: $text_dark_one;
+        }
+      }
+    }
+  }
+
+  .nav_btn {
+    display: none;
+  }
+
+  @include Mobile_Custom_Portrait {
+    padding-left: 20.45px;
+    padding-right: 20.45px;
+
+    .navs {
+      display: none;
+    }
+
+    .nav_btn {
+      display: grid;
+      align-items: center;
+
+      .btn {
+        padding: 8px 12px;
+      }
+
+      svg {
+        font-size: 16.67px;
+      }
+    }
+  }
+}

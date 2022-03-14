@@ -24,7 +24,7 @@
     "react-facebook-pixel": "^1.0.4",
     "react-ga": "~3.3.0",
     "react-hotjar": "^4.0.0",
-    "react-icons": "~4.0.0",
+    "react-icons": "^4.3.1",
     "react-id-swiper": "~4.0.0",
     "react-mailchimp-subscribe": "~2.1.0",
     "react-meta-tags": "~1.0.0",

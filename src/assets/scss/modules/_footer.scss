@@ -1,0 +1,124 @@
+.Footer--Root {
+  background-color: $dark-bg;
+  padding: 0 122px;
+
+  .footer__container {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: stretch;
+
+    .company__links {
+      padding-top: 50px;
+      display: grid;
+      grid-template-columns: 35% 65%;
+
+      .company_block {
+        display: flex;
+        flex-direction: row;
+
+        .logo_img {
+          margin-right: 11px;
+          margin-left: 11px;
+          width: 33.33px;
+          height: 36.84px;
+          margin-top: 8px;
+        }
+
+        .company__title {
+          p:nth-of-type(1n) {
+            font-weight: 500;
+            font-size: 24px;
+            line-height: 29px;
+            color: $white;
+            margin-bottom: 0;
+          }
+          p:nth-of-type(2n) {
+            font-weight: 600;
+            font-size: 14px;
+            line-height: 18px;
+            color: $white;
+          }
+        }
+      }
+
+      .links_block {
+        display: grid;
+        grid-template-columns: repeat(3, minmax(100px, 1fr));
+        padding-bottom: 40px;
+
+        ul {
+          list-style: none;
+          padding-left: 0;
+
+          li {
+            margin-bottom: 16px;
+            margin-top: 16px;
+
+            a {
+              font-weight: 600;
+              font-size: 14px;
+              line-height: 18px;
+              color: $text_gray;
+              text-decoration: none;
+            }
+          }
+        }
+
+        .link__title {
+          font-weight: 800;
+          font-size: 24px;
+          line-height: 31px;
+          color: $white;
+          border-bottom: 1px solid $white;
+          padding-bottom: 6px;
+          margin-right: 40px;
+        }
+      }
+    }
+
+    .copy_rights {
+      border-top: 1px solid $white;
+
+      p {
+        margin-top: 10px;
+        margin-bottom: 31px;
+        font-style: normal;
+        font-weight: 500;
+        font-size: 14px;
+        line-height: 17px;
+        text-align: center;
+        color: $white;
+      }
+    }
+  }
+
+  @include Mobile_Custom_Portrait {
+    padding: 0 20px;
+
+    .footer__container {
+      .company__links {
+        grid-template-columns: 100%;
+        padding-top: 40px;
+
+        .company_block {
+          .logo_img {
+            height: 38.5px;
+            width: 38.5px;
+            margin-right: 8.75px;
+            margin-left: 0;
+          }
+        }
+
+        .links_block {
+          grid-template-columns: 100%;
+          padding-top: 40px;
+
+          .link__title {
+            margin-right: 35%;
+          }
+        }
+      }
+    }
+  }
+}

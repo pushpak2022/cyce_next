@@ -1,0 +1,205 @@
+.About--Root {
+  padding: 0 122px;
+
+  .header__call {
+    padding-top: 100px;
+    position: relative;
+    display: grid;
+    grid-template-columns: 60% 40%;
+    border-bottom: 1px solid $dark_gray;
+
+    &::after {
+      content: "";
+      position: absolute;
+      width: calc(100% + 122px);
+      height: 130%;
+      left: 0;
+      bottom: 0;
+      z-index: -1;
+      background: url("./../../images2/about_vector.png");
+      background-repeat: no-repeat;
+      background-size: cover;
+    }
+
+    .header__titles {
+      .title {
+        font-weight: 800;
+        font-size: 48px;
+        line-height: 61px;
+        color: $dark_one;
+        margin-bottom: 0;
+      }
+
+      .desc {
+        margin-top: 10px;
+        font-weight: 500;
+        font-size: 16px;
+        line-height: 38px;
+        color: $dark_gray;
+        margin-bottom: 0;
+      }
+    }
+
+    .header__graphics {
+      display: grid;
+      place-items: center;
+      padding-bottom: 70px;
+
+      .about_image {
+        height: auto;
+        width: 287px;
+      }
+    }
+
+    .border__logo {
+      position: absolute;
+      bottom: -29px;
+      left: calc(50% - 25px);
+
+      .logo {
+        width: 51.67px;
+        height: 57.19px;
+      }
+    }
+  }
+
+  .about__content {
+    margin-top: 100px;
+    margin-bottom: 100px;
+
+    .profile__bar {
+      display: flex;
+      flex-direction: row;
+      justify-content: flex-start;
+      align-items: center;
+
+      .profile__img {
+        width: 100px;
+        height: 100px;
+        border-radius: 50%;
+      }
+
+      .titles {
+        margin-left: 30px;
+        display: flex;
+        flex-direction: column;
+        justify-content: flex-start;
+        align-items: flex-start;
+
+        .name {
+          font-weight: 500;
+          font-size: 48px;
+          line-height: 58px;
+          color: $dark_one;
+          margin-bottom: 0;
+        }
+
+        .position {
+          margin-top: 6px;
+          font-weight: 600;
+          font-size: 16px;
+          line-height: 20px;
+          color: $dark_gray;
+          margin-bottom: 0;
+
+          .br__sm {
+            display: none;
+          }
+        }
+      }
+    }
+
+    .profile__desc {
+      margin-top: 32px;
+      font-weight: 500;
+      font-size: 16px;
+      line-height: 28px;
+      color: $dark_one;
+
+      p {
+        margin-bottom: 20px;
+      }
+    }
+  }
+
+  @include Mobile_Custom_Portrait {
+    padding: 60px 20px;
+    padding-bottom: 0;
+
+    .header__call {
+      padding-top: 0;
+      grid-template-columns: 100%;
+
+      &::after {
+        width: calc(100% + 40px);
+        height: calc(100% + 60px);
+        left: -20px;
+        background: url("./../../images2/about_vector_sm.png");
+        background-repeat: no-repeat;
+        background-size: cover;
+      }
+
+      .header__titles {
+        .title {
+          font-size: 24px;
+          line-height: 31px;
+        }
+
+        .desc {
+          font-size: 14px;
+          line-height: 24px;
+        }
+      }
+
+      .header__graphics {
+        display: grid;
+        place-items: center;
+        padding-bottom: 65px;
+
+        .about_image {
+          padding-top: 40px;
+          height: auto;
+          width: 184.48px;
+        }
+      }
+    }
+
+    .about__content {
+      margin-top: 70px;
+      margin-bottom: 150px;
+
+      .profile__bar {
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+
+        .profile__img {
+          width: 100px;
+          height: 100px;
+          border-radius: 50%;
+        }
+
+        .titles {
+          margin-left: 0;
+          margin-top: 20px;
+          justify-content: center;
+          align-items: center;
+
+          .name {
+            font-size: 24px;
+            line-height: 29px;
+          }
+
+          .position {
+            font-size: 14px;
+            line-height: 18px;
+
+            .br__sm {
+              display: inline-block;
+            }
+          }
+        }
+      }
+    }
+  }
+}

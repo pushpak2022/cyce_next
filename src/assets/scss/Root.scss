@@ -1,0 +1,24 @@
+@import "./initial/normalize";
+@import "./initial/breakpoints";
+@import "./initial/fonts";
+@import "./initial/variables";
+
+@import "./modules/index";
+@import "./elements/index";
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Mont", Helvetica, Arial, sans-serif;
+}
+
+#root,
+.app {
+  width: 100vw;
+  height: 100vh;
+}
+
+.fs-inter {
+  font-family: "Inter", sans-serif;
+}

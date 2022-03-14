@@ -9853,10 +9853,10 @@ react-hotjar@^4.0.0:
   resolved "https://registry.yarnpkg.com/react-hotjar/-/react-hotjar-4.0.0.tgz#b98b6baf7da19cd63565a81dee40d0d62702bacd"
   integrity sha512-jRk2aWZkK2MMWRj+DBhpwTG5jfhae5DMLoVGbRGqPjZDmKYTtV/tD1/0kmFIlw4pInHKaukQriJ14CQg8MGvww==
 
-react-icons@~4.0.0:
-  version "4.0.0"
-  resolved "https://registry.yarnpkg.com/react-icons/-/react-icons-4.0.0.tgz#7ee18489472eb5797719bf997a1e2037b22d37d1"
-  integrity sha512-HNS9Bsi73SImFZjwBAuaDIPfSqjLzDNZAN3PSjhZ7+7XJSCjkgFuzaMnyZetZXyawKwyoIPwmvGMSeFsEfsCPg==
+react-icons@^4.3.1:
+  version "4.3.1"
+  resolved "https://registry.yarnpkg.com/react-icons/-/react-icons-4.3.1.tgz#2fa92aebbbc71f43d2db2ed1aed07361124e91ca"
+  integrity sha512-cB10MXLTs3gVuXimblAdI71jrJx8njrJZmNMEMC+sQu5B/BIOmlsAjskdqpn81y8UBVEGuHODd7/ci5DvoSzTQ==
 
 react-id-swiper@~4.0.0:
   version "4.0.0"

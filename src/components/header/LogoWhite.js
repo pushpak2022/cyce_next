@@ -1,6 +1,6 @@
 import React from "react"
 import { Link } from "react-router-dom"
-import logo from "../../assets/images/logo/pod_logo_white.svg"
+import logo from "../../assets/images/logo/pod_logo.svg"
 import styles from "./Logo.module.scss"
 
 const LogoWhite = () => {

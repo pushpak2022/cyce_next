@@ -1,0 +1,16 @@
+.RootLayout {
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;
+  justify-content: flex-start;
+  align-items: stretch;
+
+  .containerbox {
+    min-width: 100vw;
+    flex: 1;
+  }
+
+  @include Mobile_Custom_Portrait {
+    width: 100vw;
+  }
+}
