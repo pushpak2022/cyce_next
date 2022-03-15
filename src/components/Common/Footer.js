@@ -20,16 +20,19 @@ export default function Footer() {
               <p className="link__title">Company</p>
               <ul className="link__list">
                 <li>
-                  <a href="#">Home</a>
+                  <Link to={"/_home"}>Home</Link>
                 </li>
                 <li>
-                  <a href="#">About Us</a>
+                  <Link to={"/_about"}>About Us</Link>
                 </li>
                 <li>
-                  <a href="#">Pricing</a>
+                  <Link to={"/_pricing"}>Pricing</Link>
                 </li>
                 <li>
-                  <a href="#">Contact Us</a>
+                  <Link to={"/_faq"}>Faqs</Link>
+                </li>
+                <li>
+                  <Link to={"/_about"}>Contact Us</Link>
                 </li>
               </ul>
             </div>
