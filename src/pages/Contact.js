@@ -6,8 +6,7 @@ import { Title } from "../components/Title"
 import ReactPixel from "react-facebook-pixel"
 
 const Contact = () => {
-  useEffect(() => {
-  }, [])
+  useEffect(() => {}, [])
 
   return (
     <Fragment>
@@ -22,7 +21,7 @@ const Contact = () => {
         </h5>
         <div
           className="calendly-inline-widget"
-          style={{ minWidth: "320px", height: "630px", backgroundColor: 'red' }}
+          style={{ minWidth: "320px", height: "630px", backgroundColor: "red" }}
         ></div>
         {/* contact map */}
         {/*<ContactMap />*/}

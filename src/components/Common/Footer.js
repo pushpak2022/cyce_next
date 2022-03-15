@@ -1,7 +1,7 @@
-import React from "react";
-import { Link } from "react-router-dom";
+import React from "react"
+import { Link } from "react-router-dom"
 
-import LOGO_PNG from "./../../assets/images2/logo.png";
+import LOGO_PNG from "./../../assets/images2/logo.png"
 
 export default function Footer() {
   return (
@@ -67,11 +67,9 @@ export default function Footer() {
           </div>
         </div>
         <div className="copy_rights">
-          <p className="fs-inter">
-            Copyright © Pod. 2020. All Rights Reserved.
-          </p>
+          <p className="fs-inter">Copyright © Pod. 2020. All Rights Reserved.</p>
         </div>
       </div>
     </div>
-  );
+  )
 }

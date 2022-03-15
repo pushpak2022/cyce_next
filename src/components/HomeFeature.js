@@ -20,8 +20,8 @@ const HomeFeature = () => {
                 forms to actually fit.
               </p>
               <p>
-                While you may have been prescribed with cookie-cutter tools before; working with pod is like having
-                your own team of designers, developers, strategist. Except you don&apos;t have to spend nearly as much.
+                While you may have been prescribed with cookie-cutter tools before; working with pod is like having your
+                own team of designers, developers, strategist. Except you don&apos;t have to spend nearly as much.
               </p>
             </div>
           </div>

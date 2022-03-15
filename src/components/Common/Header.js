@@ -1,11 +1,11 @@
-import React from "react";
-import { NavLink } from "react-router-dom";
-import { BiHomeAlt } from "react-icons/bi";
-import { HiOutlineOfficeBuilding } from "react-icons/hi";
-import { AiOutlineDollarCircle, AiOutlineQuestionCircle } from "react-icons/ai";
-import { RiMenu5Line } from "react-icons/ri";
+import React from "react"
+import { NavLink } from "react-router-dom"
+import { BiHomeAlt } from "react-icons/bi"
+import { HiOutlineOfficeBuilding } from "react-icons/hi"
+import { AiOutlineDollarCircle, AiOutlineQuestionCircle } from "react-icons/ai"
+import { RiMenu5Line } from "react-icons/ri"
 
-import LOGO_PNG from "./../../assets/images2/logo.png";
+import LOGO_PNG from "./../../assets/images2/logo.png"
 
 export default function Header() {
   return (
@@ -16,33 +16,25 @@ export default function Header() {
       </NavLink>
       <ul className="navs">
         <li>
-          <NavLink
-          activeClassName="active"
-            to="/_home">
+          <NavLink activeClassName="active" to="/_home">
             <BiHomeAlt className="nav_icon" />
             Home
           </NavLink>
         </li>
         <li>
-          <NavLink
-            activeClassName="active"
-            to="/_about">
+          <NavLink activeClassName="active" to="/_about">
             <HiOutlineOfficeBuilding className="nav_icon" />
             About Us
           </NavLink>
         </li>
         <li>
-          <NavLink
-            activeClassName="active"
-            to="/_pricing">
+          <NavLink activeClassName="active" to="/_pricing">
             <AiOutlineDollarCircle className="nav_icon" />
             Pricing
           </NavLink>
         </li>
         <li>
-          <NavLink
-            activeClassName="active"
-            to="/_faq">
+          <NavLink activeClassName="active" to="/_faq">
             <AiOutlineQuestionCircle className="nav_icon" />
             FAQs
           </NavLink>
@@ -57,5 +49,5 @@ export default function Header() {
         </button>
       </div>
     </div>
-  );
+  )
 }

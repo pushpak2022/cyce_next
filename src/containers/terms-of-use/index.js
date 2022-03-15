@@ -9,8 +9,8 @@ const TermsOfUseContainer = ({ background }) => {
         <div className="row">
           <p>
             These Terms of Use constitute a legally binding agreement made between you, whether personally or on behalf
-            of an entity (“you”) and pod.io (“Company”, “we”, “us”, or “our”), concerning your access to and use of
-            the <a href="https://pod.io/">https://pod.io</a>
+            of an entity (“you”) and pod.io (“Company”, “we”, “us”, or “our”), concerning your access to and use of the{" "}
+            <a href="https://pod.io/">https://pod.io</a>
             &nbsp;website as well as any other media form, media channel, mobile website or mobile application related,
             linked, or otherwise connected thereto (collectively, the “Site”). You agree that by accessing the Site, you
             have read, understood, and agreed to be bound by all of these Terms of Use. IF YOU DO NOT AGREE WITH ALL OF
@@ -455,12 +455,12 @@ const TermsOfUseContainer = ({ background }) => {
           <p>&nbsp;</p>
           <p>
             We care about data privacy and security. Please review our Privacy Policy:&nbsp;
-            <a href="https://pod.io/privacy">https://pod.io/privacy</a>. By using the Site, you agree to be
-            bound by our Privacy Policy, which is incorporated into these Terms of Use. Please be advised the Site is
-            hosted in the United States. If you access the Site from any other region of the world with laws or other
-            requirements governing personal data collection, use, or disclosure that differ from applicable laws in the
-            United States, then through your continued use of the Site, you are transferring your data to the United
-            States, and you agree to have your data transferred to and processed in the United States.
+            <a href="https://pod.io/privacy">https://pod.io/privacy</a>. By using the Site, you agree to be bound by our
+            Privacy Policy, which is incorporated into these Terms of Use. Please be advised the Site is hosted in the
+            United States. If you access the Site from any other region of the world with laws or other requirements
+            governing personal data collection, use, or disclosure that differ from applicable laws in the United
+            States, then through your continued use of the Site, you are transferring your data to the United States,
+            and you agree to have your data transferred to and processed in the United States.
           </p>
           <p>&nbsp;</p>
           <p>COPYRIGHT INFRINGEMENTS</p>

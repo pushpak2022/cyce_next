@@ -14,7 +14,8 @@ module.exports = {
     indent: ["error", 2],
     "max-len": 0,
     "no-undef": 1,
-    "import/first": 2
+    "import/first": 2,
+    "react/no-unescaped-entities": 0
   },
   parserOptions: {
     ecmaVersion: 11,

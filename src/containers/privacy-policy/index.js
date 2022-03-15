@@ -16,8 +16,8 @@ const PrivacyPolicyContainer = ({ background }) => {
             </p>
             <p>
               When you visit our website&nbsp;
-              <a href="https://pod.io/">https://pod.io</a>&nbsp;(the “Website”), and more generally, use any of
-              our services (the “Services”, which include the Website), we appreciate that you are trusting us with your
+              <a href="https://pod.io/">https://pod.io</a>&nbsp;(the “Website”), and more generally, use any of our
+              services (the “Services”, which include the Website), we appreciate that you are trusting us with your
               personal information. We take your privacy very seriously. In this privacy notice, we seek to explain to
               you in the clearest way possible what information we collect, how we use it and what rights you have in
               relation to it. We hope you take some time to read through it carefully, as it is important. If there are
@@ -155,8 +155,8 @@ const PrivacyPolicyContainer = ({ background }) => {
               <li>
                 To post testimonials. We post testimonials on our Website that may contain personal information. Prior
                 to posting a testimonial, we will obtain your consent to use your name and the consent of the
-                testimonial. If you wish to update, or delete your testimonial, please contact us at support@pod.io
-                and be sure to include your name, testimonial location, and contact information.<p>&nbsp;</p>
+                testimonial. If you wish to update, or delete your testimonial, please contact us at support@pod.io and
+                be sure to include your name, testimonial location, and contact information.<p>&nbsp;</p>
               </li>
               <li>
                 Request feedback. We may use your information to request feedback and to contact you about your use of
@@ -413,8 +413,8 @@ const PrivacyPolicyContainer = ({ background }) => {
               information, (ii) to request rectification or erasure; (iii) to restrict the processing of your personal
               information; and (iv) if applicable, to data portability. In certain circumstances, you may also have the
               right to object to the processing of your personal information. To make such a request, please email
-              support@pod.io. We will consider and act upon any request in accordance with applicable data
-              protection laws.
+              support@pod.io. We will consider and act upon any request in accordance with applicable data protection
+              laws.
             </p>
             <p>
               If we are relying on your consent to process your personal information, you have the right to withdraw
