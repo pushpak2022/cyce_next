@@ -16,6 +16,7 @@ import HomeNew from "./pages/HomeNew"
 import AboutNew from "./pages/AboutNew"
 import PricingNew from "./pages/PricingNew"
 import FaqNew from "./pages/FaqNew"
+import ContactNew from "./pages/ContactNew"
 
 const App = () => {
   let location = useLocation()
@@ -43,6 +44,7 @@ const App = () => {
         <Route exact path={`${process.env.PUBLIC_URL + "/_about"}`} component={AboutNew} />
         <Route exact path={`${process.env.PUBLIC_URL + "/_pricing"}`} component={PricingNew} />
         <Route exact path={`${process.env.PUBLIC_URL + "/_faq"}`} component={FaqNew} />
+        <Route exact path={`${process.env.PUBLIC_URL + "/_contact"}`} component={ContactNew} />
         <Route exact component={NotFound} />
       </Switch>
     </ScrollToTop>

@@ -63,7 +63,7 @@ export default function Header() {
           </NavLink>
         </li>
         <li>
-          <NavLink activeClassName="active" to="/_faq">
+          <NavLink activeClassName="active" to="/_contact">
             <BsTelephone className="nav_icon" />
             Contact Us
           </NavLink>
@@ -100,7 +100,7 @@ export default function Header() {
                 <span>FAQs</span>
                 <BsArrowRight className="arrow_right" />
               </NavLink>
-              <NavLink className="link" activeClassName="active" to="/_faq">
+              <NavLink className="link" activeClassName="active" to="/_contact">
                 <BsTelephone className="nav_icon" />
                 <span>Contact Us</span>
                 <BsArrowRight className="arrow_right" />
