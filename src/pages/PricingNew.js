@@ -13,6 +13,12 @@ const PLAN_AUTOMATION = {
   pro: "2500 Automations / month + 2-way data sync"
 }
 
+const PLAN_BADGE_COLOR = {
+  free: "#8ce28b",
+  basic: "#fd7062",
+  pro: "#1f90ff"
+}
+
 export default function Pricing() {
   const history = useHistory()
   const [pricing, setPricing] = React.useState("free")
@@ -44,11 +50,14 @@ export default function Pricing() {
             <div className="section__left">
               <div className="head">
                 <div>
-                  <h5 className="title">Free Plan</h5>
+                  <h5 className="title">{`${pricing} Plan`}</h5>
                   <p className="desc">Inclusive of the followings:</p>
                 </div>
                 <div>
-                  <div className="badge__freee">Free Setup</div>
+                  <div
+                    style={{ backgroundColor: PLAN_BADGE_COLOR[pricing] }}
+                    className="badge__freee"
+                  >{`${pricing} Setup`}</div>
                 </div>
               </div>
               <div className="list">

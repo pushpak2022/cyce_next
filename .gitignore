@@ -36,7 +36,6 @@ yarn-error.log*
 .eslintcache*
 
 # IDE
-.vscode
 .idea/**/workspace.xml
 .idea/**/tasks.xml
 .idea/**/usage.statistics.xml
@@ -45,3 +44,7 @@ yarn-error.log*
 .idea/modules.xml
 .idea/*.iml
 
+temp_auto_push.bat
+temp_interactive_push.bat
+.gitignore
+branch_structure.json
