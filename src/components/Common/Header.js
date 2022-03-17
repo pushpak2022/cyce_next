@@ -24,13 +24,6 @@ export default function Header() {
     }
   }
 
-  React.useEffect(() => {
-    if (smHeader.current) {
-      smHeader.current.classList.remove("active")
-      smHeaderBtn.current.classList.remove("active")
-    }
-  }, [])
-
   return (
     <div className="HeaderBar--root">
       <NavLink className="logobox" to="/_home">
@@ -77,7 +70,7 @@ export default function Header() {
           <RiMenu5Line className="normal" />
           <AiOutlineRight className="open" />
         </button>
-        <div ref={smHeader} className="navs__sm active">
+        <div ref={smHeader} className="navs__sm">
           <div className="nav__box">
             <div className="links">
               <NavLink className="link" activeClassName="active" to="/_home">

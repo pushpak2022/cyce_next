@@ -3,18 +3,21 @@
     "id": "1",
     "image": "1.png",
     "name": "Kush Kapila",
+    "pos" : "HR Manager",
     "content": "Excellent experience! Carl and his team are competent, trustworthy, and creative. They continue to over-deliver and always willing to go an extra mile to help."
   },
   {
     "id": "2",
     "image": "2.png",
     "name": "Darby Rollins",
+    "pos" : "CEO of CampMinder",
     "content": "Always helpful and showing commitment. When doing business, it’s important to work with someone you like and trust! Thanks Carl!"
   },
   {
     "id": "3",
     "image": "3.png",
     "name": "Santiago Loaiza",
+    "pos" : "Managing Directer",
     "content": "Always willing to go the extra mile to help!"
   },
   {

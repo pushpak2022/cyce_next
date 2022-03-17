@@ -3,8 +3,98 @@
 
 @font-face {
   font-family: "Mont";
-  src: url("./../../font/mont/Mont-Trial-Regular.eot");
-  src: url("./../../font/mont/Mont-Trial-Regular.eot?#iefix") format("embedded-opentype"),
-    url("./../../font/mont/Mont-Trial-Regular.woff2") format("woff2"),
-    url("./../../font/mont/Mont-Trial-Regular.woff") format("woff");
+  src: url("./../../font/mont/Mont-Regular.ttf") format("truetype");
+  font-weight: 500;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: "Mont";
+  src: url("./../../font/mont/Mont-RegularItalic.ttf") format("truetype");
+  font-weight: 500;
+  font-style: italic;
+}
+
+@font-face {
+  font-family: "Mont";
+  src: url("./../../font/mont/Mont-SemiBold.ttf") format("truetype");
+  font-weight: 600;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: "Mont";
+  src: url("./../../font/mont/Mont-SemiBoldItalic.ttf") format("truetype");
+  font-weight: 600;
+  font-style: italic;
+}
+
+@font-face {
+  font-family: "Mont";
+  src: url("./../../font/mont/Mont-Bold.ttf") format("truetype");
+  font-weight: 700;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: "Mont";
+  src: url("./../../font/mont/Mont-BoldItalic.ttf") format("truetype");
+  font-weight: 700;
+  font-style: italic;
+}
+
+@font-face {
+  font-family: "Mont";
+  src: url("./../../font/mont/Mont-Heavy.ttf") format("truetype");
+  font-weight: 800;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: "Mont";
+  src: url("./../../font/mont/Mont-HeavyItalic.ttf") format("truetype");
+  font-weight: 800;
+  font-style: italic;
+}
+
+@font-face {
+  font-family: "Mont";
+  src: url("./../../font/mont/Mont-Light.ttf") format("truetype");
+  font-weight: 400;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: "Mont";
+  src: url("./../../font/mont/Mont-LightItalic.ttf") format("truetype");
+  font-weight: 400;
+  font-style: italic;
+}
+
+@font-face {
+  font-family: "Mont";
+  src: url("./../../font/mont/Mont-ExtraLight.ttf") format("truetype");
+  font-weight: 300;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: "Mont";
+  src: url("./../../font/mont/Mont-ExtraLightItalic.ttf") format("truetype");
+  font-weight: 300;
+  font-style: italic;
+}
+
+@font-face {
+  font-family: "Mont";
+  src: url("./../../font/mont/Mont-Thin.ttf") format("truetype");
+  font-weight: 200;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: "Mont";
+  src: url("./../../font/mont/Mont-ThinItalic.ttf") format("truetype");
+  font-weight: 200;
+  font-style: italic;
 }

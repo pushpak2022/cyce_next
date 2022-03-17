@@ -3,8 +3,11 @@ import { FiMail } from "react-icons/fi"
 import { FaRegUserCircle } from "react-icons/fa"
 import { RiArrowRightCircleFill } from "react-icons/ri"
 import { BsFillStarFill } from "react-icons/bs"
+import ReactPixel from "react-facebook-pixel"
+import { API } from "../api/API"
 
 import Layout from "./../components/Common/Layout"
+import testimonialData from "./../data/testimonials/testimonial-one.json"
 
 import HOME_HEADER_IMAGE from "./../assets/images2/home_header_right.png"
 import HOME_HEADER_SM_IMAGE from "./../assets/images2/home_header_sm.png"
@@ -31,7 +34,33 @@ import VBDR from "./../assets/images2/vertical_border.png"
 import HBDR from "./../assets/images2/horizontal_border.png"
 import STAR from "./../assets/images2/star.png"
 
+const testimonialList = testimonialData.slice(0, 3).map((r, i) => {
+  r.image = [USER3, USER4, USER5][i]
+  return r
+})
+
 export default function Home() {
+  const [loading, setLoading] = React.useState(false)
+  const [subMsg, setSubMsg] = React.useState("")
+  const [email, setEmail] = React.useState("")
+  const [name, setName] = React.useState("")
+  const [reviewId, setReviewId] = React.useState(0)
+
+  const createSendinBlueContact = async () => {
+    setLoading(true)
+    const res = await API.createSendinBlueContact(email, name)
+    setSubMsg("Successfully subscribed! See you on the inside!")
+    if (res.err) {
+      setSubMsg(
+        "Whoops looks like something happened and " +
+          "we can't subscribe you at this time. Shoot us an email at " +
+          "support@pod.io and we'll send you a gift :)"
+      )
+      console.error("Error creating sendinblue contact", res.err)
+    }
+    setLoading(false)
+  }
+
   return (
     <Layout>
       <div className="Home--Root">
@@ -44,13 +73,33 @@ export default function Home() {
             <div className="form__row">
               <div className="input__group">
                 <FiMail className="input__icon" />
-                <input className="text__input" type="email" placeholder="Your email address" />
+                <input
+                  value={email}
+                  onChange={e => setEmail(e.target.value)}
+                  className="text__input"
+                  type="email"
+                  placeholder="Your email address"
+                />
               </div>
               <div className="input__group">
                 <FaRegUserCircle className="input__icon" />
-                <input className="text__input" type="text" placeholder="Your Full Name" />
+                <input
+                  value={name}
+                  onChange={e => setName(e.target.value)}
+                  className="text__input"
+                  type="text"
+                  placeholder="Your Full Name"
+                />
               </div>
-              <button className="btn btn-primary">Sign up</button>
+              <button
+                onClick={() => {
+                  ReactPixel.track("Subscribe")
+                  createSendinBlueContact()
+                }}
+                className="btn btn-primary"
+              >
+                Sign up
+              </button>
             </div>
             <div className="user__row">
               <div className="users">
@@ -222,42 +271,26 @@ export default function Home() {
           </div>
           <div className="review__box">
             <div className="left">
-              <div className="user__review__bar">
-                <img src={USER3} alt="user" className="user_img" />
-                <div className="user__info">
-                  <p className="title">Ken Chan</p>
-                  <p className="desc">HR Manager</p>
+              {testimonialList.map((r, i) => (
+                <div onClick={() => setReviewId(i)} key={i} className="user__review__bar">
+                  <img src={r.image} alt="user" className="user_img" />
+                  <div className="user__info">
+                    <p className="title">{r.name}</p>
+                    <p className="desc">{r.pos}</p>
+                  </div>
                 </div>
-              </div>
-              <div className="user__review__bar">
-                <img src={USER4} alt="user" className="user_img" />
-                <div className="user__info">
-                  <p className="title">Ali Pineda</p>
-                  <p className="desc">CEO of CampMinder</p>
-                </div>
-              </div>
-              <div className="user__review__bar">
-                <img src={USER5} alt="user" className="user_img" />
-                <div className="user__info">
-                  <p className="title">Kush Kapila</p>
-                  <p className="desc">Managing Directer</p>
-                </div>
-              </div>
+              ))}
             </div>
             <div className="right">
-              <p className="title">Ken Chan</p>
+              <p className="title">{testimonialList[reviewId].name}</p>
               <div className="ratings">
                 <BsFillStarFill className="star" />
                 <BsFillStarFill className="star" />
                 <BsFillStarFill className="star" />
                 <BsFillStarFill className="star" />
                 <BsFillStarFill className="star" />
-                ``
               </div>
-              <p className="desc">
-                My experience with Pod is that he cares others and he shows his authenticity. He is driven and
-                determined. He is a serial entrepreneur and always looking to create win-win situations.
-              </p>
+              <p className="desc">{testimonialList[reviewId].content}</p>
             </div>
           </div>
         </div>

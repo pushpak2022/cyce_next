@@ -1,12 +1,26 @@
 import React from "react"
+import { useHistory } from "react-router-dom"
+
 import { BsFillCheckCircleFill, BsCircle } from "react-icons/bs"
 import Layout from "./../components/Common/Layout"
 
 import PRICING_IMAGE from "./../assets/images2/pricing_image.png"
 import GRAY_LOGO from "./../assets/images2/gray_logo.png"
 
+const PLAN_AUTOMATION = {
+  free: "100 Automations / month",
+  basic: "1000 Automations / month",
+  pro: "2500 Automations / month + 2-way data sync"
+}
+
 export default function Pricing() {
+  const history = useHistory()
   const [pricing, setPricing] = React.useState("free")
+
+  const goToCntact = React.useCallback(() => {
+    history.push(`/_contact?pricing=${pricing}`)
+  }, [pricing])
+
   return (
     <Layout>
       <div className="Pricing--Root">
@@ -43,7 +57,7 @@ export default function Pricing() {
                     <p>Automations</p>
                   </div>
                   <div>
-                    <p>100 Automations / month</p>
+                    <p>{PLAN_AUTOMATION[pricing]}</p>
                     <BsFillCheckCircleFill className="chk__icon" />
                   </div>
                 </div>
@@ -173,7 +187,9 @@ export default function Pricing() {
           </div>
         </div>
         <div className="choose__plan">
-          <button className="btn btn-primary">Choose Plan</button>
+          <button onClick={goToCntact} className="btn btn-primary">
+            Choose Plan
+          </button>
         </div>
       </div>
     </Layout>
