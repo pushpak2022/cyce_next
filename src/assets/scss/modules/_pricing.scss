@@ -74,7 +74,7 @@
       text-align: center;
       margin-bottom: 0;
     }
-    
+
     .pricing__desc {
       margin-bottom: 0;
       margin-top: 10px;
@@ -111,8 +111,9 @@
               line-height: 41px;
               color: $dark_one;
               margin-bottom: 0;
+              text-transform: capitalize;
             }
-            
+
             .desc {
               margin-bottom: 0;
               font-weight: 600;
@@ -124,6 +125,7 @@
 
           div:nth-of-type(2n) {
             .badge__freee {
+              text-transform: capitalize;
               background: $green;
               color: $white;
               padding: 10px 16px;
@@ -161,7 +163,7 @@
 
             div:nth-of-type(2n) {
               display: flex;
-              
+
               p {
                 margin-bottom: 0;
                 font-weight: 800;

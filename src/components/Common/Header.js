@@ -5,10 +5,12 @@ import { BsTelephone, BsArrowRight } from "react-icons/bs"
 import { HiOutlineOfficeBuilding } from "react-icons/hi"
 import { AiOutlineDollarCircle, AiOutlineQuestionCircle, AiOutlineRight } from "react-icons/ai"
 import { RiMenu5Line } from "react-icons/ri"
+import { useHistory } from "react-router-dom"
 
 import LOGO_PNG from "./../../assets/images2/logo.png"
 
 export default function Header() {
+  const history = useHistory()
   const smHeader = React.useRef(null)
   const smHeaderBtn = React.useRef(null)
 
@@ -62,7 +64,9 @@ export default function Header() {
           </NavLink>
         </li>
         <li>
-          <button className="btn btn-primary">Get Started</button>
+          <button onClick={() => history.push("/_contact")} className="btn btn-primary">
+            Get Started
+          </button>
         </li>
       </ul>
       <div className="nav_btn">
